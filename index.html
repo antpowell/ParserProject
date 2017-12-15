@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- <meta http-equiv="refresh" content="1"> -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb"
+    crossorigin="anonymous">
+  <title>Parser</title>
+</head>
+
+<body>
+<br>
+<br>
+<br>
+<br>
+<br>
+  <div class="container-fluid h-100 align-items-center">
+    <div class="row justify-content-center align-self-center">
+      <form>
+        <div class="form-group">
+          <label for="lang-input">Enter language below:</label>
+          <div class="input-group">
+            <input type="text" name="lang-input" id="lang-input" class="form-control" placeholder="ex. (1v1)^~0" aria-describedby="helper-text-id">
+            <span class="input-group-btn">
+                <button id="validateLanguage" onclick="CheckLanguage()" class="btn btn-dark">Check</button>
+            </span>
+          </div>
+        </div>
+        <small id="helper-text-id" class="text-muted">Click the 'Check' button to check your language.</small>
+      </form>
+    </div>
+  </div>
+
+  <script src="tableParser.js"></script>
+
+</body>
+
+</html>
