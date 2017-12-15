@@ -42,22 +42,6 @@ const PushMap = {
   "11": [-7]
 }
 
-// const TABLE = [
-//   // [0, "V",   "^",  "~",  "(",  ")",  "1",  "0",  "$" ,
-//   [0, 0, 0, 0, 0, 0, 0, 0, 0],
-//   [0, 13, 13, 1, 1, 12, 1, 1, 12],
-//   [0, 2, 13, 13, 13, 3, 13, 13, 3],
-//   [0, 12, 13, 4, 4, 12, 4, 4, 12],
-//   [0, 6, 5, 13, 13, 6, 13, 13, 6],
-//   [0, 12, 12, 7, 8, 12, 8, 8, 12],
-//   [0, 12, 12, 13, 9, 12, 10, 11, 12]
-// ]
-
-// const TermSymbol = [-1, -2, -3, -4, -5, -6, -7]
-// const NonTerm = [1, 2, 3, 4, 5, 7, 6, 8, 9, 10, 11]
-// const ErrorState = [12, 13]
-
-
 function CheckLanguage() {
   const input = document.getElementById("lang-input").value
   const token = inputConversion(input)
