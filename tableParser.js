@@ -69,6 +69,9 @@ function CheckLanguage() {
           alert('SYNTAX ERROR')
           break;
         }
+      }else{
+        alert('SYNTAX ERROR')
+        break;
       }
     }
     top = stack[stack.length - 1]
@@ -106,6 +109,9 @@ function inputConversion(input) {
         break;
       case '0':
         newToken.push(7)
+        break;
+      default:
+        newToken.push('\/')
         break;
     }
     tokenIndex++
