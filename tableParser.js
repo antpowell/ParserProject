@@ -27,21 +27,6 @@ const CONSTANTS = {
   ErrorState:[12, 13]
 
 }
-
-const PushMap = {
-  "1": [2, 3],
-  "2": [2, 3, -1],
-  "3": [],
-  "4": [4, 5],
-  "5": [4, 5, -2],
-  "7": [6, -3],
-  "6": [],
-  "8": [6],
-  "9": [-5, 1, -4],
-  "10": [-6],
-  "11": [-7]
-}
-
 function CheckLanguage() {
   const input = document.getElementById("lang-input").value
   const token = inputConversion(input)
@@ -75,7 +60,7 @@ function CheckLanguage() {
       if (CONSTANTS.NonTerm.includes(CONSTANTS.TABLE[top][Number(token[tokenIndex])])) {
         // remove NonTerm from stack place rule for NonTerm on stack
         stack.pop()
-        stack = stack.concat(PushMap[CONSTANTS.TABLE[top][Number(token[tokenIndex])]])
+        stack = stack.concat(CONSTANTS.PushMap[CONSTANTS.TABLE[top][Number(token[tokenIndex])]])
       } else if (CONSTANTS.ErrorState.includes(CONSTANTS.TABLE[top][Number(token[tokenIndex])])) {
         if (CONSTANTS.TABLE[top][Number(token[tokenIndex])] == 12) {
           alert('SYNTAX ERROR')
